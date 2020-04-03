@@ -306,27 +306,35 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 15px;
     width: 40%;
     overflow: hidden;
+
+    position: relative;
 }
 
 .services__item__2__last{
     margin: 0;
 }
-.services__img__block {
-    position: absolute;
-}
-.services__img:hover {
-    background-color: #6DF6EB;
-
-}
 
 .services__content {
+    padding: 70px 80px 0 60px;
     position: absolute;
     top: 30%;
     left: 10%;
     z-index: 100;
+    opacity: 0;
 
     color: #fff;
 }
+
+/*.services__content--hover {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 1000;
+
+    color: #000;
+    opacity: 0;
+} */
+
 
 .services__title {
     font-family: 'Merriweather', serif;
@@ -341,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
 }
 
-.services__btn {
+/*.services__btn {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -384,25 +392,95 @@ p {
     position: absolute;
     top: 35%;
     left: 49%;
+} */
+
+
+.services__img__block:hover .services__content {
+    opacity: 1;
 }
 
+/* TEAM
+==================== */
 
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.team__item {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    width: 33.33%;
+    position: relative;
+}
 
+.team__photo {
+    max-width: 370px;
+    display: block;
+}
 
+.team__content {
+    padding: 30px;
+    max-width: 335px;
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 4%;
+    z-index: 2;
+}
 
+.team__name {
+    padding-bottom: 18px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272727;
 
+    text-transform: uppercase;
+}
 
+.team__prof {
+    font-size: 15px;
+    font-weight: 400;
+    color: #767070;
 
+    text-transform: none;
+}
 
+.team__text {
+    padding-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 
+    color: #16312F;
+}
 
+.social {
+    color: #16312F;
+    font-size: 16px;
+}
 
+.team__social {
+    cursor: pointer;
+    padding-right: 5px;
+}
 
+.team__content:hover {
+    opacity: 1;
 
+    background-color: #71F4E9;
+}
 
-
-
+.team__delta:after {
+    content: '';
+    position: absolute;
+    left: 6%; /*25px*/
+    bottom: 100%; /*240px*/
+    border: 20px solid transparent;
+    border-bottom: 20px solid #71F4E9;
+}
 
 
 
