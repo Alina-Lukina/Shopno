@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+
 /* Container
 ================= */
 
@@ -481,6 +482,210 @@ p {
     border: 20px solid transparent;
     border-bottom: 20px solid #71F4E9;
 }
+
+/* SLIDER
+======================= */
+.slider {
+    padding-bottom: 40px;
+}
+.slider__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider__img {
+    padding-left: 37px;
+    width: 37%;
+}
+
+.slider__photo {
+    max-width: 319px;
+    height: 100hv;
+}
+
+.slider__content {
+    padding-left: 82px;
+    width: 56%;
+
+    background-color: #EAEBED;
+    text-align: center;
+}
+
+.slider__name {
+    padding: 90px 0 18px 0;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272727;
+
+    text-transform: uppercase;
+}
+
+.slider__prof {
+    font-size: 15px;
+    font-weight: 400;
+    color: #767070;
+
+    text-transform: none;
+}
+
+.slider__text {
+    padding: 0 80px 30px 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+
+    color: #16312F;
+}
+
+
+/* FOOTER
+================ */
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    background: url(img/footer.png) center no-repeat;
+    background-size: cover;
+    height: 960px;
+}
+
+.footer__item {
+    padding: 350px 0 150px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    opacity: 0.8;
+}
+
+.footer__form {
+    margin-right: 26px;
+    width: 52%;
+
+    background-color: #021623;
+}
+
+.message {
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Relawey", sans-serif;
+    font-size: 15px;
+    color: #B4BBC0;
+}
+
+.message__input {
+    padding-bottom: 15px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #707070;
+}
+
+::placeholder {
+    font-family: "Relawey", sans-serif;
+    font-size: 15px;
+    color: #B4BBC0;
+}
+
+.message__btn {
+    margin-top: 25px;
+    width: 244px;
+    padding: 15px 35px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+
+    background-color: #6EEEE4;
+    color: #000;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+.message__input__textarea {
+    resize: none;
+}
+
+.adress__content {
+    padding: 30px 30px 0 30px;
+    font-family: "Relawey", sans-serif;
+    font-size: 15px;
+    color: #B4BBC0;
+}
+
+.footer__adress {
+    width: 42%;
+
+    background-color: #021623;
+}
+
+.adress__map {
+    padding: 25px;
+}
+
+/* SOCIAL
+================ */
+
+.copyright {
+    background-color: #262B2E;
+}
+
+.copyright__content {
+    padding: 90px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.copyright__title {
+    padding-bottom: 15px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #D4D5D5;
+    text-transform: uppercase;
+}
+
+.copyright__social {
+    padding-bottom: 30px;
+
+    font-size: 40px;
+    color: #707070;
+}
+
+.copyright__text {
+    font-family: "Ralewey", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    color: #7D8082;
+}
+
+.copyright__social__icon {
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.copyright__social__icon:hover {
+    color: #71F6EB;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
