@@ -176,8 +176,9 @@ h1, h2, h3, h4, h5, h6 {
 ====================== */
 
 .container__header {
-    margin: 119px auto;
+    margin: 0 auto;
     text-align: center;
+    padding: 119px 0;
 }
 
 .container__title {
@@ -199,8 +200,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.section-about {
-    background-color: #F8FAFA;
+.section-slider {
+    background-color: #F9FBFB;
 }
 
 /* About
@@ -412,7 +413,7 @@ p {
 
 .team__item {
     padding-right: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     width: 33.33%;
     position: relative;
 }
@@ -539,6 +540,74 @@ p {
     color: #16312F;
 }
 
+/* ARROW
+=================== */
+
+.slick-arrow {
+    padding: 10px 10px 10px 15px;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 95%;
+    left: 87%;
+    z-index: 1;
+
+    border: 3px;
+    background: #fff;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    border-top: 5px solid #ccc;
+    border-left: 5px solid #ccc;
+
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    padding: 10px 15px 10px 10px;
+    left: 93%;
+}
+
+.slick-next:after {
+    transform: rotate(135deg);
+}
+
+.slick-arrow:hover {
+    background-color: #71F6EB;
+}
+
+.slick-dots {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+    color: #D0D0D0;
+    position: absolute;
+    top: 95%;
+    left: 18%;
+    z-index: 1;
+
+    border: 3px;
+
+    cursor: pointer;
+
+}
+
+.slick-dots .slick-active:hover {
+    color: #71F6EB;
+}
 
 /* FOOTER
 ================ */
@@ -610,6 +679,10 @@ p {
     cursor: pointer;
 }
 
+.message__btn:hover {
+    background-color: #02f5e2;
+}
+
 .message__input__textarea {
     resize: none;
 }
@@ -630,6 +703,7 @@ p {
 .adress__map {
     padding: 25px;
 }
+
 
 /* SOCIAL
 ================ */

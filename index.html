@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,500,700|Raleway:400,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e31364d317.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Shopno</title>
 </head>
 <body>
@@ -362,13 +364,15 @@
 </section>
 
 <!-- SLIDER -->
-<section class="section">
+<section class="section section-slider">
     <div class="container">
         <div class="container__header">
             <div class="container__title">WHAT THEY SAYS</div>
             <div class="container__subtitle">LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</div>
         </div>
         <div class="slider">
+          <div data-slider>
+          <div>
            <div class="slider__item">
                 <div class="slider__img">
                     <img src="img/team_1.png" alt="" class="slider__photo">
@@ -380,6 +384,21 @@
                     <div class="slider__stars"></div>
                 </div>
           </div>
+          </div>
+          <div>
+           <div class="slider__item">
+                <div class="slider__img">
+                    <img src="img/team_2.png" alt="" class="slider__photo">
+                </div>
+                <div class="slider__content">
+                    <div class="slider__name">AL RAYHAN<span class="slider__prof">/ UI/UX DESIGNER</span></div>
+                    <div class="slider__text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer.
+                    </div>
+                    <div class="slider__stars"></div>
+                </div>
+          </div>
+          </div>
+        </div>
         </div>
     </div>
 </section>
@@ -392,7 +411,7 @@
             <div class="footer__form">
                 <form action="/" class="message" method="post">
                    <div>
-                      <p><input class="message__input" name="name" type="text" tabindex="1" autofocus required placeholder="Name*"></p>
+                      <p><input class="message__input" name="name" type="text" tabindex="1" required placeholder="Name*"></p>
                    </div>
                     <div>
                         <p>
@@ -451,22 +470,12 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>
+
